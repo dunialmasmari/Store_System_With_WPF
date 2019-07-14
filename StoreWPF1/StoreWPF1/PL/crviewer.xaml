@@ -1,0 +1,11 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Viewer="clr-namespace:SAPBusinessObjects.WPF.Viewer;assembly=SAPBusinessObjects.WPF.Viewer" x:Class="StoreWPF1.PL.crviewer"
+        Title="crviewer" Height="719.403" Width="1215.266" Loaded="Window_Loaded">
+    <Grid>
+
+        <Viewer:CrystalReportsViewer  x:Name="crviewr"  x:FieldModifier="public"  Loaded="CrystalReportsViewer_Loaded"/>
+
+    </Grid>
+</Window>

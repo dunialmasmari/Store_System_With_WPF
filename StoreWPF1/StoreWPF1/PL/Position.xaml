@@ -1,0 +1,32 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol" x:Class="StoreWPF1.PL.Position"
+        Title="Position" Height="630.936" Width="578.468">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF486A81" Offset="0"/>
+                <GradientStop Color="#FFE6CFAF" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="Salary:" HorizontalAlignment="Left" Margin="146,364,0,0" VerticalAlignment="Top" FontSize="18" RenderTransformOrigin="-0.118,0.371" FontWeight="Bold"/>
+        <Label Content="Position :" HorizontalAlignment="Left" Margin="123,303,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <TextBox x:Name="txtmax" HorizontalAlignment="Left" Height="35" Margin="272,302,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" FontSize="18"/>
+        <Label Content="ID :" HorizontalAlignment="Left" Margin="173,245,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <TextBox x:Name="txtmin" HorizontalAlignment="Left" Height="34" Margin="272,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" FontSize="18"/>
+        <Button x:Name="itembutton" x:FieldModifier="public"  HorizontalAlignment="Left" Margin="32,448,0,0" VerticalAlignment="Top" Width="125" Height="57" FontWeight="Bold" FontSize="20" Click="itembutton_Click"/>
+        <Button Content="Exit" HorizontalAlignment="Left" Margin="406,448,0,0" VerticalAlignment="Top" Width="127" Height="57" FontWeight="Bold" FontSize="20"/>
+        <Label  x:FieldModifier="public"  Content="Position Information" x:Name="itemhead"  HorizontalAlignment="Left" Margin="73,21,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <TextBox x:Name="txtmax_Copy" HorizontalAlignment="Left" Height="35" Margin="272,363,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" FontSize="18"/>
+        <TextBlock Name="date" HorizontalAlignment="Left" Margin="464,21,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <Label Content="Category Name :" HorizontalAlignment="Left" Margin="54,157,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" FontFamily="Shonar Bangla"/>
+        <TextBox x:Name="textBox2_Copy" HorizontalAlignment="Left" Height="35" Margin="254,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="211" FontSize="18"/>
+        <Label Content="ID :" HorizontalAlignment="Left" Margin="155,111,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" FontFamily="Shonar Bangla"/>
+        <TextBox x:Name="txtname" HorizontalAlignment="Left" Height="34" Margin="254,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" FontSize="18" />
+        <GroupBox Header="Category Search" HorizontalAlignment="Left" Margin="32,67,0,0" VerticalAlignment="Top" Height="152" Width="473" FontSize="22" FontWeight="Bold" FontFamily="Shonar Bangla"/>
+        <GroupBox Header="Category Search" HorizontalAlignment="Left" Margin="32,219,0,0" VerticalAlignment="Top" Height="209" Width="473" FontSize="22" FontWeight="Bold" FontFamily="Shonar Bangla"/>
+        <StatusBar Margin="0,547,0,0"/>
+
+    </Grid>
+</Window>

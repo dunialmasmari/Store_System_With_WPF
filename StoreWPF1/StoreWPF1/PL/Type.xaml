@@ -1,0 +1,24 @@
+﻿<Window x:Class="StoreWPF1.PL.Type"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Type" Height="398.936" Width="525.533">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF486A81" Offset="0"/>
+                <GradientStop Color="#FFE6CFAF" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="Item ID:" HorizontalAlignment="Left" Margin="74,135,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <Label Content="Item Name:" HorizontalAlignment="Left" Margin="43,184,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <TextBox x:Name="txtid" HorizontalAlignment="Left" Height="35" Margin="172,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" FontSize="18" />
+        <TextBox x:Name="txtname" HorizontalAlignment="Left" Height="34" Margin="172,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" FontSize="18"/>
+        <Label  x:FieldModifier="public"  Content="Type Information" x:Name="itemhead"  HorizontalAlignment="Left" Margin="4,22,0,0" VerticalAlignment="Top" FontSize="36" FontWeight="Bold"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="389,290,0,0" VerticalAlignment="Top" Width="82" Height="46"/>
+        <Button Content="" Name="typbtn" x:FieldModifier="public" HorizontalAlignment="Left" Margin="70,290,0,0" VerticalAlignment="Top" Width="82" Height="46" Click="typbtn_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="235,290,0,0" VerticalAlignment="Top" Width="82" Height="46"/>
+        <TextBlock Name="date" HorizontalAlignment="Left" Margin="410,33,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,98 @@
+﻿<Window x:Class="StoreWPF1.PL.Main"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Main" Height="728.441" Width="1359.045" WindowState="Maximized"   WindowStartupLocation="CenterOwner" >
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF486A81" Offset="0"/>
+                <GradientStop Color="#FFE6CFAF" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Menu Height="40" VerticalAlignment="Top" >
+            <MenuItem Header=" File" FontSize="21" FontWeight="SemiBold" Click="MenuItem_Click"  >
+                <MenuItem Header="Set Authorization" FontSize="21" FontWeight="SemiBold"  ></MenuItem>
+                <MenuItem Header="Back Up" FontSize="21" FontWeight="SemiBold"  ></MenuItem>
+                <MenuItem Header="Restore" FontSize="21" FontWeight="SemiBold"  ></MenuItem>
+                <MenuItem Header="Log Out" FontSize="21" FontWeight="SemiBold"  ></MenuItem>
+            </MenuItem>
+            <MenuItem Header=" Management" FontSize="21" FontWeight="SemiBold"  >
+
+                <MenuItem Header=" Employee" FontSize="21" FontWeight="SemiBold" >
+                    <MenuItem Header="Add" Click="AddEmp_clk"/>
+                    <MenuItem Header="Update" Click="UdtEmp"/>
+                    <MenuItem Header="Delete" Click="delEmp"/>
+                    
+                    <MenuItem Header="Set Authorization" FontSize="21" FontWeight="SemiBold" />
+                </MenuItem>
+                <MenuItem Header=" Customer" FontSize="21" FontWeight="SemiBold"  >
+                    <MenuItem Header="Add" Click="AddCust"/>
+                    <MenuItem Header="Update" Click="UdtCust"/>
+                    <MenuItem Header="Delete" Click="delCust" />
+                </MenuItem>
+                <MenuItem Header=" Company" FontSize="21" FontWeight="SemiBold"  >
+                    <MenuItem Header="Add" Click="AddComp"/>
+                    <MenuItem Header="Update" Click="UdtComp"/>
+                    <MenuItem Header="Delete" Click="delComp"/>
+                </MenuItem>
+                <MenuItem Header=" Product" FontSize="21" FontWeight="SemiBold" >
+                    <MenuItem Header="Add" Click="Additem"/>
+                    <MenuItem Header="Update" Click="Udtitem"/>
+                    <MenuItem Header="Delete" Click="delitem"/>
+                </MenuItem>
+                <MenuItem Header="Manage Store" FontSize="21" FontWeight="SemiBold"  >
+                    <MenuItem Header="Add" Click="MenuItem_Click_12"/>
+                    <MenuItem Header="Update" Click="MenuItem_Click_13"/>
+                    <MenuItem Header="Delete" Click="MenuItem_Click_14"/>
+                </MenuItem>
+                <MenuItem Header="Manage Category" FontSize="21" FontWeight="SemiBold"  >
+                    <MenuItem Header="Add" Click="MenuItem_Click_9"/>
+                    <MenuItem Header="Update" Click="MenuItem_Click_10"/>
+                    <MenuItem Header="Delete"  Click="MenuItem_Click_11"/>
+                </MenuItem>
+                <MenuItem Header="Manage Item Type" FontSize="21" FontWeight="SemiBold"  >
+                    <MenuItem Header="Add" Click="MenuItem_Click_6"/>
+                    <MenuItem Header="Update" Click="MenuItem_Click_7"/>
+                    <MenuItem Header="Delete" Click="MenuItem_Click_8"/>
+                </MenuItem>
+                <MenuItem Header="Employee Position" FontSize="21" FontWeight="SemiBold"  >
+                    <MenuItem Header="Add" Click="MenuItem_Click_1"/>
+                    <MenuItem Header="Update" Click="MenuItem_Click_4" />
+                    <MenuItem Header="Delete" Click="MenuItem_Click_5"/>
+                </MenuItem>
+
+            </MenuItem>
+            <MenuItem Header=" Report" FontSize="21" FontWeight="SemiBold" >
+                <MenuItem Header=" Sales" FontSize="21" FontWeight="SemiBold"  Click="MenuItem_Click_15" ></MenuItem>
+                <MenuItem Header=" Purchase" FontSize="21" FontWeight="SemiBold" Click="MenuItem_Click_16" ></MenuItem>
+
+                <MenuItem Header=" Employee" FontSize="21" FontWeight="SemiBold" />
+
+                <MenuItem Header=" Customer" FontSize="21" FontWeight="SemiBold"  ></MenuItem>
+                <MenuItem Header=" Company" FontSize="21" FontWeight="SemiBold"  ></MenuItem>
+                <MenuItem Header=" Product" FontSize="21" FontWeight="SemiBold" ></MenuItem>
+                <MenuItem Header=" Store" FontSize="21" FontWeight="SemiBold"  ></MenuItem>
+                <MenuItem Header=" Category" FontSize="21" FontWeight="SemiBold"  ></MenuItem>
+                <MenuItem Header="Item Type" FontSize="21" FontWeight="SemiBold"  ></MenuItem>
+                <MenuItem Header="Employee Position" FontSize="21" FontWeight="SemiBold"  ></MenuItem>
+
+            </MenuItem>
+            <MenuItem Header=" Sale" FontSize="21" FontWeight="SemiBold"  >
+                <MenuItem Header=" Sale" FontSize="21" FontWeight="SemiBold" Click="MenuItem_Click_2" ></MenuItem>
+                <MenuItem Header=" Purchase" FontSize="21" FontWeight="SemiBold" Click="MenuItem_Click_3" ></MenuItem>
+            </MenuItem>
+            <MenuItem Header=" Setting" FontSize="21" FontWeight="SemiBold"   >
+
+             
+            </MenuItem>
+            <MenuItem Header=" Help" FontSize="21" FontWeight="SemiBold"  ></MenuItem>
+        </Menu>
+        <StatusBar Margin="0,649,0,0">
+
+            <TextBlock Name="DT" FontSize="18" ></TextBlock>
+            <TextBlock Name="MN" Margin="400,0,200,0" FontSize="18"   ></TextBlock>
+            <TextBlock Name="EN" Margin="150,0,0,0" FontSize="18" ></TextBlock>
+        </StatusBar>
+
+    </Grid>
+</Window>

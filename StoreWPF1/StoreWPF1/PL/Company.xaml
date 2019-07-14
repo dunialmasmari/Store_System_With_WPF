@@ -1,0 +1,65 @@
+﻿<Window x:Class="StoreWPF1.PL.Company"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Company" Height="627.232" Width="631.162"  WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF6D9CBB" Offset="0"/>
+                <GradientStop Color="#FFF7E2C5" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button  Name="compbtn" x:FieldModifier="public" Content="" HorizontalAlignment="Left" Margin="87,514,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"  Width="104" Height="51" Click="Button_Click">
+            <Button.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE6CFAF" Offset="0"/>
+                    <GradientStop Color="#FF486A81" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.BorderBrush>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FF486A81" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    <GradientStop Color="#FFE6CFAF" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Content="Exit" HorizontalAlignment="Left" Margin="430,514,0,0"  VerticalAlignment="Top" FontWeight="Bold" FontSize="20" Width="104" Height="51" Click="Button_Click_1">
+            <Button.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE6CFAF" Offset="0"/>
+                    <GradientStop Color="#FF486A81" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.BorderBrush>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FF486A81" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    <GradientStop Color="#FFE6CFAF" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label Content="Company ID:" HorizontalAlignment="Left" Margin="153,256,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <Label Content="Company Name:" HorizontalAlignment="Left" Margin="122,307,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <Label Content="Company Phone Number:" HorizontalAlignment="Left" Margin="44,360,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <Label Content="Company Address:" HorizontalAlignment="Left" Margin="104,414,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <Label Content="Company Management" HorizontalAlignment="Left" Margin="30,24,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <TextBox x:Name="txtid" HorizontalAlignment="Left" Height="35" Margin="305,255,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="18" KeyDown="txtid_KeyDown"/>
+        <TextBox x:Name="txtname" HorizontalAlignment="Left" Height="35" Margin="305,307,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" FontSize="18" KeyDown="txtname_KeyDown"/>
+        <TextBox x:Name="txtphone" HorizontalAlignment="Left" Height="35" Margin="305,360,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="18" KeyDown="txtphone_KeyDown"/>
+        <TextBox x:Name="txtaddress" HorizontalAlignment="Left" Height="60" Margin="305,414,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" FontSize="18" KeyDown="txtaddress_KeyDown"/>
+        <TextBlock  Name="date" HorizontalAlignment="Left" Margin="499,24,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Company ID:" HorizontalAlignment="Left" Margin="156,120,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <Label Content="Company Name:" HorizontalAlignment="Left" Margin="125,171,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Height="35" Margin="308,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="18"/>
+        <TextBox HorizontalAlignment="Left" Height="35" Margin="308,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" FontSize="18"/>
+        <GroupBox Header="Company Search " HorizontalAlignment="Left" Height="135" Margin="30,86,0,0" VerticalAlignment="Top" Width="560" FontSize="20" FontWeight="Bold"/>
+        <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="1" Margin="122,244,0,0" VerticalAlignment="Top" Width="0"/>
+        <GroupBox Header="Company Information" HorizontalAlignment="Left" Height="264" Margin="30,226,0,0" VerticalAlignment="Top" Width="560" FontSize="20" FontWeight="Bold"/>
+        <StatusBar Margin="0,575,0,0"/>
+
+
+    </Grid>
+</Window>

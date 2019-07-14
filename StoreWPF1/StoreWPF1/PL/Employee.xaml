@@ -1,0 +1,69 @@
+﻿<Window x:Class="StoreWPF1.PL.Employee"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Employee" Height="710.953" Width="953.407" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF6D9CBB" Offset="0"/>
+                <GradientStop Color="#FFF7E2C5" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button Content="" Name="empbtn" HorizontalAlignment="Left" Margin="199,561,0,0" VerticalAlignment="Top"  FontWeight="Bold" FontSize="20"  Width="104" Height="52" Click="empbtn_Click">
+            <Button.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE6CFAF" Offset="0"/>
+                    <GradientStop Color="#FF486A81" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.BorderBrush>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FF486A81" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    <GradientStop Color="#FFE6CFAF" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Content="Exit" HorizontalAlignment="Left" Margin="688,561,0,0" VerticalAlignment="Top" Width="104" Height="52" FontSize="20" FontWeight="Bold" Click="Button_Click">
+            <Button.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE6CFAF" Offset="0"/>
+                    <GradientStop Color="#FF486A81" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.BorderBrush>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FF486A81" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    <GradientStop Color="#FFE6CFAF" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <ComboBox x:Name="cmb2" HorizontalAlignment="Left" Margin="731,454,0,0" VerticalAlignment="Top" Width="164" BorderBrush="White" Foreground="White" Background="White" FontSize="18" Height="32"/>
+        <Label x:Name="lbl1" Content="" HorizontalAlignment="Left" Margin="781,410,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="Employee ID:" HorizontalAlignment="Left" Margin="142,316,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <Label Content="Employee Name:" HorizontalAlignment="Left" Margin="112,364,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <Label Content="Employee Phone Number:" HorizontalAlignment="Left" Margin="32,408,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <Label Content="Employee Address:" HorizontalAlignment="Left" Margin="94,454,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <Label Content="Employee Position:" HorizontalAlignment="Left" Margin="537,364,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <Label Content="Store Name:" HorizontalAlignment="Left" Margin="593,454,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <TextBox x:Name="txtid" HorizontalAlignment="Left" Height="32" Margin="280,318,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="122" FontSize="18" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="txtname" HorizontalAlignment="Left" Height="32" Margin="280,366,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" FontSize="18"/>
+        <TextBox x:Name="txtphone" HorizontalAlignment="Left" Height="32" Margin="280,410,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" FontSize="18"/>
+        <Label Content="Employee Salary:" HorizontalAlignment="Left" Margin="554,408,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <TextBox x:Name="txtaddress" HorizontalAlignment="Left" Height="53" Margin="280,456,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" FontSize="18"/>
+        <Label Content="Employee Information" HorizontalAlignment="Left" Margin="36,39,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <ComboBox x:Name="cmb1"  HorizontalAlignment="Left" Margin="722,366,0,0" VerticalAlignment="Top" Width="173" BorderBrush="White" Foreground="White" Background="White" FontSize="18" Height="32" SelectionChanged="cmb1_SelectionChanged"/>
+        <TextBlock Name="date" HorizontalAlignment="Left" Margin="722,55,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <Label Content="Employee ID:" HorizontalAlignment="Left" Margin="307,138,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Height="39"/>
+        <Label Content="Employee Name:" HorizontalAlignment="Left" Margin="277,197,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Height="39"/>
+        <TextBox HorizontalAlignment="Left" Height="39" Margin="459,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="18"/>
+        <TextBox HorizontalAlignment="Left" Height="39" Margin="459,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" FontSize="18"/>
+        <GroupBox Header="Employee Search" HorizontalAlignment="Left" Height="162" Margin="10,103,0,0" VerticalAlignment="Top" Width="925" FontSize="20" FontWeight="Bold"/>
+        <GroupBox Header="Employee Information" HorizontalAlignment="Left" Height="267" Margin="10,265,0,0" VerticalAlignment="Top" Width="925" FontSize="20" FontWeight="Bold"/>
+        <StatusBar Margin="0,639,0,0"/>
+
+    </Grid>
+</Window>
